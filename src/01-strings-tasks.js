@@ -36,10 +36,7 @@ function concatenateStrings(value1, value2) {
  */
 function getStringLength(value) {
   let i = 0;
-  while (true) {
-    if (value[i] === undefined) {
-      break;
-    }
+  while (!(value[i] === undefined)) {
     i += 1;
   }
   return i;

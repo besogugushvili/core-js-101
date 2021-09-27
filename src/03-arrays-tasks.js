@@ -318,17 +318,8 @@ function propagateItemsByPositionIndex(arr) {
  *   [ 1,2,3,4,5,6,7,8,9,10 ] => [ 10, 9, 8 ]
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
-function get3TopItems(arr) {
-  return arr.reduce(((previousValue, currentValue) => {
-    if (previousValue.length < 3) {
-      return previousValue.concat(currentValue).sort().reverse();
-    }
-    if (previousValue[2] > currentValue) {
-      return previousValue;
-    }
-    previousValue.pop();
-    return previousValue.concat(currentValue).sort().reverse();
-  }), []);
+function get3TopItems(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 
